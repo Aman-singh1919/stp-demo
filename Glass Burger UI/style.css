@@ -1,0 +1,118 @@
+/* Reset default spacing and box-model */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen body with gradient background */
+body {
+  height: 100vh;
+  background: linear-gradient(
+    to right top,
+    #9b23ea,
+    #5f72be
+  ); /* Purple gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Page container width control */
+.container {
+  width: 90%;
+  max-width: 1100px;
+}
+
+/* Main glass effect card */
+.card {
+  display: flex; /* left-right layout */
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 20px;
+
+  /* Glassmorphism effect */
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Soft shadow */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  color: white;
+  flex-wrap: wrap; /* Mobile responsive support */
+}
+
+/* Left content section */
+.content {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Brand styling */
+.brand {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+/* Main heading style */
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+/* BURGER word color change */
+h1 span {
+  color: #ffcc00;
+}
+
+/* Subheading */
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+/* Description paragraph */
+p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Buttons group */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 20px;
+  background: #fff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+  background: #ffcc00;
+}
+
+/* Meal timing section */
+.timing {
+  display: flex;
+  gap: 40px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+/* Burger image styling */
+.burger-img img {
+  width: 300px;
+  height: auto;
+}
